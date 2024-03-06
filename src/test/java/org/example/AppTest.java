@@ -35,4 +35,14 @@ public class AppTest
     {
         assertTrue( true );
     }
+
+
+    public void testPush() {
+        MyStack<Integer> stack = new MyStack<>();
+        stack.push(1);
+        stack.push(2);
+        stack.push(3);
+
+
+    }
 }
