@@ -45,14 +45,17 @@ public class AppTest
         stack.push(2);
         stack.push(3);
         assertEquals(3, stack.pop().intValue());
-    }
-    public void testPop(){
-        MyStack<Integer> stack = new MyStack<>();
+        assertEquals(2, stack.pop().intValue());
+        assertEquals(1, stack.pop().intValue());
 
-        assertEquals(3, stack.pop().intValue());
-//        assertEquals(2, stack.pop());
-//        assertEquals(1, stack.pop());
     }
+//    public void testPop(){
+//        MyStack<Integer> stack = new MyStack<>();
+//
+//        assertEquals(3, stack.pop().intValue());
+////        assertEquals(2, stack.pop());
+////        assertEquals(1, stack.pop());
+//    }
 
 //    public void testPopEmptyStack() {
 //        MyStack<Integer> stack = new MyStack<>();
