@@ -80,6 +80,9 @@ public class AppTest
         stack.push(2);
         stack.push(3);
         assertEquals(4, stack.size());
+        stack.pop();
+        assertEquals(3,stack.size());
+
 
     }
 
