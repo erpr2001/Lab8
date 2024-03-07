@@ -49,18 +49,7 @@ public class AppTest
         assertEquals(1, stack.pop().intValue());
 
     }
-//    public void testPop(){
-//        MyStack<Integer> stack = new MyStack<>();
-//
-//        assertEquals(3, stack.pop().intValue());
-////        assertEquals(2, stack.pop());
-////        assertEquals(1, stack.pop());
-//    }
 
-//    public void testPopEmptyStack() {
-//        MyStack<Integer> stack = new MyStack<>();
-//        assertThrows(EmptyStackException.class, stack::pop);
-//    }
 
     public void testPushAndPopMixedTypes() {
         MyStack<Object> stack = new MyStack<>();
@@ -72,5 +61,28 @@ public class AppTest
         assertEquals("two", stack.pop());
         assertEquals(1, stack.pop());
     }
+
+    public void testIsEmpty() {
+        MyStack<Integer> stack = new MyStack<>();
+        stack.push(1);
+        assertTrue(stack.isEmpty());
+//        stack.push(1);
+//        assertFalse(stack.isEmpty());
+//        stack.pop();
+//        assertTrue(stack.isEmpty());
+    }
+
+    //    public void testPop(){
+//        MyStack<Integer> stack = new MyStack<>();
+//
+//        assertEquals(3, stack.pop().intValue());
+////        assertEquals(2, stack.pop());
+////        assertEquals(1, stack.pop());
+//    }
+
+//    public void testPopEmptyStack() {
+//        MyStack<Integer> stack = new MyStack<>();
+//        assertThrows(EmptyStackException.class, stack::pop);
+//    }
 
 }
