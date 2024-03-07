@@ -6,6 +6,8 @@ import junit.framework.TestSuite;
 
 import java.util.EmptyStackException;
 
+import static org.junit.Assert.assertThrows;
+
 /**
  * Unit test for simple App.
  */
@@ -94,9 +96,9 @@ public class AppTest
 ////        assertEquals(1, stack.pop());
 //    }
 
-//    public void testPopEmptyStack() {
-//        MyStack<Integer> stack = new MyStack<>();
-//        assertThrows(EmptyStackException.class, stack::pop);
-//    }
+    public void testPopEmptyStack() {
+        MyStack<Integer> stack = new MyStack<>();
+        assertThrows(EmptyStackException.class, stack::pop);
+    }
 
 }
