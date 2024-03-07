@@ -64,10 +64,9 @@ public class AppTest
 
     public void testIsEmpty() {
         MyStack<Integer> stack = new MyStack<>();
-        stack.push(1);
         assertTrue(stack.isEmpty());
-//        stack.push(1);
-//        assertFalse(stack.isEmpty());
+        stack.push(1);
+        assertFalse(stack.isEmpty());
 //        stack.pop();
 //        assertTrue(stack.isEmpty());
     }
